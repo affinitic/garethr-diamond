@@ -10,8 +10,8 @@
 #   Some collectors have multiple sections, for example the netapp and rabbitmq collectors
 #   Each section can have its own options
 define diamond::collector (
-  $options = undef,
-  $sections = undef
+  $options = {},
+  $sections = {}
 ) {
 
   Class['diamond::config']
