@@ -13,7 +13,6 @@ define diamond::collector (
   $options = undef,
   $sections = undef
 ) {
-  include diamond
 
   Class['diamond::config']
   ->
